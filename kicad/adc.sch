@@ -1,0 +1,431 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HH_TexasInstruments:ADS131M04 A?
+U 1 1 5FC78550
+P 5650 3800
+AR Path="/5FC78550" Ref="A?"  Part="1" 
+AR Path="/5FC723A8/5FC78550" Ref="A1"  Part="1" 
+F 0 "A1" H 5650 3900 50  0000 C CNN
+F 1 "ADS131M04" H 5650 3800 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5650 3800 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/ads131m04.pdf" H 5650 3800 50  0001 C CNN
+F 4 "296-ADS131M04IPWRCT-ND" H 5650 3800 50  0001 C CNN "Digi-Key Part Number"
+F 5 "Texas Instruments" H 5650 3800 50  0001 C CNN "Manufacturer"
+F 6 "ADS131M04IPWR" H 5650 3800 50  0001 C CNN "Manufacturer Part Number"
+F 7 "4-channel ADC" H 5650 3800 50  0001 C CNN "Description"
+	1    5650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L HH_SiTime:SIT1602BI-21-XXE-8.192000G U?
+U 1 1 5FC7855A
+P 7850 3450
+AR Path="/5FC7855A" Ref="U?"  Part="1" 
+AR Path="/5FC723A8/5FC7855A" Ref="U1"  Part="1" 
+F 0 "U1" H 7850 3135 50  0000 C CNN
+F 1 "SIT1602BI-21-XXE-8.192000G" H 7850 3226 50  0000 C CNN
+F 2 "HH_SiTime:SIT1602BI-21-XXE-8.192000G" H 7850 3450 50  0001 C CNN
+F 3 "https://www.sitime.com/datasheet/SiT1602" H 7850 3450 50  0001 C CNN
+F 4 "1473-SIT1602BI-21-XXE-8.192000G-ND" H 7850 3450 50  0001 C CNN "Digi-Key Part Number"
+F 5 "SiTime" H 7850 3450 50  0001 C CNN "Manufacturer"
+F 6 "SIT1602BI-21-XXE-8.192000G" H 7850 3450 50  0001 C CNN "Manufacturer Part Number"
+F 7 "MEMS OSC XO 8.1920MHZ H/LV-CMOS" H 7850 3450 50  0001 C CNN "Description"
+	1    7850 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8800 3350 8700 3350
+Wire Wire Line
+	8550 3350 8550 3550
+Wire Wire Line
+	8550 3550 8350 3550
+Connection ~ 8550 3350
+Wire Wire Line
+	8550 3350 8350 3350
+Wire Wire Line
+	8400 3450 8350 3450
+Wire Wire Line
+	5600 4700 5600 4550
+Wire Wire Line
+	5200 3000 5400 3000
+Wire Wire Line
+	5600 3000 5600 3050
+$Comp
+L Device:C C?
+U 1 1 5FC78580
+P 5400 2850
+AR Path="/5FC78580" Ref="C?"  Part="1" 
+AR Path="/5FC723A8/5FC78580" Ref="C5"  Part="1" 
+F 0 "C5" H 5515 2896 50  0000 L CNN
+F 1 "1µF" H 5515 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5438 2700 50  0001 C CNN
+F 3 "~" H 5400 2850 50  0001 C CNN
+	1    5400 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 3000
+Wire Wire Line
+	5400 3000 5600 3000
+Wire Wire Line
+	5700 2700 5400 2700
+Wire Wire Line
+	5700 2700 5700 3050
+Wire Wire Line
+	5250 4700 5400 4700
+$Comp
+L Device:C C?
+U 1 1 5FC78590
+P 5400 4850
+AR Path="/5FC78590" Ref="C?"  Part="1" 
+AR Path="/5FC723A8/5FC78590" Ref="C6"  Part="1" 
+F 0 "C6" H 5515 4896 50  0000 L CNN
+F 1 "1µF" H 5515 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5438 4700 50  0001 C CNN
+F 3 "~" H 5400 4850 50  0001 C CNN
+	1    5400 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 4700
+Wire Wire Line
+	5400 4700 5600 4700
+Wire Wire Line
+	5700 5000 5550 5000
+Wire Wire Line
+	5550 5000 5550 5250
+Wire Wire Line
+	5700 4550 5700 5000
+Wire Wire Line
+	5400 5000 5550 5000
+Connection ~ 5550 5000
+$Comp
+L Device:C C?
+U 1 1 5FC7859D
+P 6700 3050
+AR Path="/5FC7859D" Ref="C?"  Part="1" 
+AR Path="/5FC723A8/5FC7859D" Ref="C7"  Part="1" 
+F 0 "C7" H 6815 3096 50  0000 L CNN
+F 1 "220nF" H 6815 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6738 2900 50  0001 C CNN
+F 3 "~" H 6700 3050 50  0001 C CNN
+	1    6700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2750 6700 2900
+Wire Wire Line
+	6700 3200 6700 3350
+Wire Wire Line
+	6700 3350 6550 3350
+Wire Wire Line
+	6550 3450 7350 3450
+Text HLabel 8800 3350 2    50   Input ~ 0
+3V3
+Text HLabel 5250 4700 0    50   Input ~ 0
+3V3
+Text HLabel 5200 3000 0    50   Input ~ 0
+3V3
+Text HLabel 3200 2750 0    50   Input ~ 0
+S1
+Text HLabel 3200 3350 0    50   Input ~ 0
+S2
+Text HLabel 3200 3950 0    50   Input ~ 0
+S3
+Text HLabel 3200 4550 0    50   Input ~ 0
+S4
+$Comp
+L Device:C C1
+U 1 1 5FC7BC20
+P 4150 2900
+F 0 "C1" H 4265 2946 50  0000 L CNN
+F 1 "10nF" H 4265 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4188 2750 50  0001 C CNN
+F 3 "~" H 4150 2900 50  0001 C CNN
+	1    4150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FC7C079
+P 3750 2750
+F 0 "R4" V 3543 2750 50  0000 C CNN
+F 1 "1k" V 3634 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3680 2750 50  0001 C CNN
+F 3 "~" H 3750 2750 50  0001 C CNN
+	1    3750 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FC7C4AF
+P 3750 3050
+F 0 "R5" V 3543 3050 50  0000 C CNN
+F 1 "1k" V 3634 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3680 3050 50  0001 C CNN
+F 3 "~" H 3750 3050 50  0001 C CNN
+	1    3750 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FC810D4
+P 4150 3500
+F 0 "C2" H 4265 3546 50  0000 L CNN
+F 1 "10nF" H 4265 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4188 3350 50  0001 C CNN
+F 3 "~" H 4150 3500 50  0001 C CNN
+	1    4150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5FC811C0
+P 3750 3350
+F 0 "R6" V 3543 3350 50  0000 C CNN
+F 1 "1k" V 3634 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3680 3350 50  0001 C CNN
+F 3 "~" H 3750 3350 50  0001 C CNN
+	1    3750 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5FC811CA
+P 3750 3650
+F 0 "R7" V 3543 3650 50  0000 C CNN
+F 1 "1k" V 3634 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3680 3650 50  0001 C CNN
+F 3 "~" H 3750 3650 50  0001 C CNN
+	1    3750 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5FC85696
+P 4150 4100
+F 0 "C3" H 4265 4146 50  0000 L CNN
+F 1 "10nF" H 4265 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4188 3950 50  0001 C CNN
+F 3 "~" H 4150 4100 50  0001 C CNN
+	1    4150 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5FC857B4
+P 3750 3950
+F 0 "R8" V 3543 3950 50  0000 C CNN
+F 1 "1k" V 3634 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3680 3950 50  0001 C CNN
+F 3 "~" H 3750 3950 50  0001 C CNN
+	1    3750 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5FC857BE
+P 3750 4250
+F 0 "R9" V 3543 4250 50  0000 C CNN
+F 1 "1k" V 3634 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3680 4250 50  0001 C CNN
+F 3 "~" H 3750 4250 50  0001 C CNN
+	1    3750 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5FC880A7
+P 4150 4700
+F 0 "C4" H 4265 4746 50  0000 L CNN
+F 1 "10nF" H 4265 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4188 4550 50  0001 C CNN
+F 3 "~" H 4150 4700 50  0001 C CNN
+	1    4150 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5FC881F7
+P 3750 4550
+F 0 "R10" V 3543 4550 50  0000 C CNN
+F 1 "1k" V 3634 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3680 4550 50  0001 C CNN
+F 3 "~" H 3750 4550 50  0001 C CNN
+	1    3750 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5FC88201
+P 3750 4850
+F 0 "R11" V 3543 4850 50  0000 C CNN
+F 1 "1k" V 3634 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3680 4850 50  0001 C CNN
+F 3 "~" H 3750 4850 50  0001 C CNN
+	1    3750 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 3400 4600 3400
+Wire Wire Line
+	4600 3400 4600 2750
+Wire Wire Line
+	4600 2750 4150 2750
+Wire Wire Line
+	4150 2750 3900 2750
+Connection ~ 4150 2750
+Wire Wire Line
+	3600 2750 3200 2750
+Wire Wire Line
+	3900 3050 4150 3050
+Wire Wire Line
+	4150 3050 4550 3050
+Wire Wire Line
+	4550 3050 4550 3500
+Wire Wire Line
+	4550 3500 4750 3500
+Connection ~ 4150 3050
+Wire Wire Line
+	4750 3650 4500 3650
+Wire Wire Line
+	4500 3650 4500 3350
+Wire Wire Line
+	4500 3350 4150 3350
+Wire Wire Line
+	4150 3350 3900 3350
+Connection ~ 4150 3350
+Wire Wire Line
+	3600 3350 3200 3350
+Wire Wire Line
+	4150 3650 4450 3650
+Wire Wire Line
+	4450 3650 4450 3750
+Wire Wire Line
+	4450 3750 4750 3750
+Connection ~ 4150 3650
+Wire Wire Line
+	3900 3650 4150 3650
+Wire Wire Line
+	4750 3900 4450 3900
+Wire Wire Line
+	4450 3900 4450 3950
+Wire Wire Line
+	4450 3950 4150 3950
+Wire Wire Line
+	4150 3950 3900 3950
+Connection ~ 4150 3950
+Wire Wire Line
+	3600 3950 3200 3950
+Wire Wire Line
+	3900 4250 4150 4250
+Wire Wire Line
+	4150 4250 4500 4250
+Wire Wire Line
+	4500 4250 4500 4000
+Wire Wire Line
+	4500 4000 4750 4000
+Connection ~ 4150 4250
+Wire Wire Line
+	4750 4150 4550 4150
+Wire Wire Line
+	4550 4150 4550 4550
+Wire Wire Line
+	4550 4550 4150 4550
+Wire Wire Line
+	4150 4550 3900 4550
+Connection ~ 4150 4550
+Wire Wire Line
+	3600 4550 3200 4550
+Wire Wire Line
+	4750 4250 4600 4250
+Wire Wire Line
+	4600 4250 4600 4850
+Wire Wire Line
+	4600 4850 4150 4850
+Wire Wire Line
+	4150 4850 3900 4850
+Connection ~ 4150 4850
+Text Label 5700 2700 0    50   ~ 0
+AGND
+Text Label 3600 3050 2    50   ~ 0
+AGND
+Text Label 3600 3650 2    50   ~ 0
+AGND
+Text Label 3600 4250 2    50   ~ 0
+AGND
+Text Label 3600 4850 2    50   ~ 0
+AGND
+Text Label 6700 2750 0    50   ~ 0
+DGND
+Text Label 5550 5250 3    50   ~ 0
+DGND
+Text Label 8400 4000 3    50   ~ 0
+DGND
+Text Label 7600 4550 2    50   ~ 0
+AGND
+Text Label 7600 4750 2    50   ~ 0
+DGND
+Text HLabel 7950 4650 2    50   Input ~ 0
+GND
+Wire Wire Line
+	7600 4550 7800 4550
+Wire Wire Line
+	7800 4550 7800 4650
+Wire Wire Line
+	7800 4650 7950 4650
+Wire Wire Line
+	7600 4750 7800 4750
+Wire Wire Line
+	7800 4750 7800 4650
+Connection ~ 7800 4650
+Text HLabel 6550 3650 2    50   Input ~ 0
+COPI
+Text HLabel 6550 3750 2    50   Input ~ 0
+CIPO
+Text HLabel 6550 3850 2    50   Input ~ 0
+SCLK
+Text HLabel 6550 3950 2    50   Input ~ 0
+~CS
+Text HLabel 6550 4150 2    50   Input ~ 0
+~DRDY
+Text HLabel 6550 4250 2    50   Input ~ 0
+~SYNC
+$Comp
+L Device:C C10
+U 1 1 5FCED712
+P 8700 3650
+F 0 "C10" H 8815 3696 50  0000 L CNN
+F 1 "0.1µF" H 8815 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8738 3500 50  0001 C CNN
+F 3 "~" H 8700 3650 50  0001 C CNN
+	1    8700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3500 8700 3350
+Connection ~ 8700 3350
+Wire Wire Line
+	8700 3350 8550 3350
+Wire Wire Line
+	8400 3450 8400 3900
+Wire Wire Line
+	8400 3900 8700 3900
+Wire Wire Line
+	8700 3900 8700 3800
+Connection ~ 8400 3900
+Wire Wire Line
+	8400 3900 8400 4000
+$EndSCHEMATC
