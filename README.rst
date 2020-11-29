@@ -17,7 +17,7 @@ Current Sense Element
 ZXCT1110W5-7
 ............
 
-<Datasheet `https://www.diodes.com/assets/Datasheets/ZXCT1107_10.pdf`>_
+`Datasheet <https://www.diodes.com/assets/Datasheets/ZXCT1107_10.pdf>`_
 
 +------------------------+-------------------+
 |Manufacturer            |Diodes Incorporated|
@@ -57,7 +57,7 @@ ADC
 ADS131M04
 .........
 
-<Datasheet `https://www.ti.com/lit/ds/symlink/ads131m04.pdf`>_
+`Datasheet <https://www.ti.com/lit/ds/symlink/ads131m04.pdf>`_
 
 +--------------------------+------------------------+
 | Manufacturer             | Texas Instruments      |
