@@ -98,3 +98,9 @@ SIT1602BI
 +--------------------------+------------------------------------+
 | Digi-Key Part Number     | 1473-SIT1602BI-21-XXE-8.192000G-ND |
 +--------------------------+------------------------------------+
+
+TODOs
+=====
+
+  * Select different values for R_gain
+  * Select different gains for INA381
