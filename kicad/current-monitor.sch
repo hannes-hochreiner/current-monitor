@@ -262,13 +262,13 @@ L Device:R R12
 U 1 1 5FC968B8
 P 2250 4300
 F 0 "R12" H 2320 4346 50  0000 L CNN
-F 1 "2" H 2320 4255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0612_1632Metric" V 2180 4300 50  0001 C CNN
-F 3 "https://www.rohm.com/datasheet/LTR100JZPD/ltr-e" H 2250 4300 50  0001 C CNN
-F 4 "RHM2YCT-ND" H 2250 4300 50  0001 C CNN "Digi-Key Part Number"
-F 5 "Rohm Semiconductor" H 2250 4300 50  0001 C CNN "Manufacturer"
-F 6 "LTR18EZPF2R00" H 2250 4300 50  0001 C CNN "Manufacturer Part Number"
-F 7 "RES SMD 2 OHM 3/4W 1206 WIDE" H 2250 4300 50  0001 C CNN "Description"
+F 1 ".4" H 2320 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_2010_5025Metric" V 2180 4300 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/30138/wslt2010.pdf" H 2250 4300 50  0001 C CNN
+F 4 "WSLTA-.400CT-ND" H 2250 4300 50  0001 C CNN "Digi-Key Part Number"
+F 5 "Vishay Dale" H 2250 4300 50  0001 C CNN "Manufacturer"
+F 6 "WSLT2010R4000FEB18" H 2250 4300 50  0001 C CNN "Manufacturer Part Number"
+F 7 "RES 0.4 OHM 1% 1W 2010" H 2250 4300 50  0001 C CNN "Description"
 	1    2250 4300
 	-1   0    0    1   
 $EndComp
@@ -358,4 +358,15 @@ Wire Wire Line
 Wire Wire Line
 	2700 4600 3050 4600
 Connection ~ 2700 4600
+$Comp
+L HH_Hochreiner:logo L1
+U 1 1 5FC9FF08
+P 2250 5400
+F 0 "L1" H 2275 5446 50  0000 L CNN
+F 1 "logo" H 2275 5355 50  0000 L CNN
+F 2 "HH_Hochreiner:logo" H 2150 5250 50  0001 C CNN
+F 3 "" H 2250 5400 50  0001 C CNN
+	1    2250 5400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

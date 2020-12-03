@@ -115,6 +115,17 @@ X S- 5 -550 -50 200 R 50 50 0 0 I
 ENDDRAW
 ENDDEF
 #
+# HH_Hochreiner_logo
+#
+DEF HH_Hochreiner_logo L 0 40 Y Y 1 F N
+F0 "L" 0 -50 50 H V C CNN
+F1 "HH_Hochreiner_logo" 0 50 50 H V C CNN
+F2 "HH_Hochreiner:logo" -100 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+ENDDRAW
+ENDDEF
+#
 # HH_SiTime_SIT1602BI-21-XXE-8.192000G
 #
 DEF HH_SiTime_SIT1602BI-21-XXE-8.192000G U 0 40 Y Y 1 F N
