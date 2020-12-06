@@ -1,3 +1,7 @@
+.. image:: images/rendering_front.png
+    :align: center
+    :alt: rendering of the pcb
+
 Current Monitor
 ~~~~~~~~~~~~~~~
 
