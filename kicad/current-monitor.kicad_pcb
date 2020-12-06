@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 17)
+    (drawings 32)
     (tracks 273)
     (zones 0)
     (modules 35)
@@ -305,7 +305,7 @@
     (tags resistor)
     (path /5FC968B8)
     (attr smd)
-    (fp_text reference R12 (at 0 -2.28 90) (layer F.SilkS)
+    (fp_text reference R12 (at 3.8 -0.05 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value .4 (at 0 2.28 90) (layer F.Fab)
@@ -333,6 +333,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/R_2010.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD (layer F.Cu) (tedit 59FED5CC) (tstamp 5FC86726)
@@ -341,7 +346,7 @@
     (tags "Surface mounted pin header SMD 2x02 2.54mm double row")
     (path /5FC96924)
     (attr smd)
-    (fp_text reference J2 (at 3.75 -2.75) (layer F.SilkS)
+    (fp_text reference J2 (at -3.5 0) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_02x02_Odd_Even (at 0 3.6) (layer F.Fab)
@@ -393,6 +398,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/header_smd_2_54_2x2.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module HH_TexasInstruments:INA381-WSON (layer F.Cu) (tedit 5FC7F725) (tstamp 5FC934E7)
@@ -427,6 +437,11 @@
       (net 26 /sensors/S3+))
     (pad PAD smd rect (at 0 0 90) (size 0.9 1.6) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
+    (model /home/hannes/Repository/kicad/models/TexasInstruments/INA381-WSON.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module HH_TexasInstruments:INA381-WSON (layer F.Cu) (tedit 5FC7F725) (tstamp 5FC9351D)
@@ -461,6 +476,11 @@
       (net 26 /sensors/S3+))
     (pad PAD smd rect (at 0 0 90) (size 0.9 1.6) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
+    (model /home/hannes/Repository/kicad/models/TexasInstruments/INA381-WSON.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module MountingHole:MountingHole_2.2mm_M2_Pad_Via (layer F.Cu) (tedit 56DDB9C7) (tstamp 5FC7F72F)
@@ -525,7 +545,7 @@
     (tags resistor)
     (path /5FC44931)
     (attr smd)
-    (fp_text reference R1 (at 0 -2.65 90) (layer F.SilkS)
+    (fp_text reference R1 (at 0 3 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 2 (at 0 2.65 90) (layer F.Fab)
@@ -553,6 +573,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/R_0612.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD (layer F.Cu) (tedit 59FED5CC) (tstamp 5FC553CF)
@@ -561,7 +586,7 @@
     (tags "Surface mounted pin header SMD 2x02 2.54mm double row")
     (path /5FC56274)
     (attr smd)
-    (fp_text reference J1 (at 3.75 -2.5) (layer F.SilkS)
+    (fp_text reference J1 (at -3.5 0) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_02x02_Odd_Even (at 0 3.6) (layer F.Fab)
@@ -612,6 +637,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/header_smd_2_54_2x2.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -709,9 +739,14 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/header_smd_2_54_2x5.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
-  (module Capacitor_SMD:C_0603_1608Metric (layer B.Cu) (tedit 5F68FEEE) (tstamp 5FC44E7A)
+  (module Capacitor_SMD:C_0603_1608Metric (layer B.Cu) (tedit 5F68FEEE) (tstamp 5FCBDE06)
     (at 175.3 107 270)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags capacitor)
@@ -741,6 +776,11 @@
     (pad 1 smd roundrect (at -0.775 0 270) (size 0.9 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 5 /adc/3V3))
     (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -787,6 +827,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/DiodesIncorporated/ZXCT1110W5-7.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
+    )
   )
 
   (module Package_TO_SOT_SMD:SOT-23-5 (layer F.Cu) (tedit 5A02FF57) (tstamp 5FC45953)
@@ -829,6 +874,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/DiodesIncorporated/ZXCT1110W5-7.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
+    )
   )
 
   (module Package_TO_SOT_SMD:SOT-23-5 (layer F.Cu) (tedit 5A02FF57) (tstamp 5FC43540)
@@ -870,6 +920,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/DiodesIncorporated/ZXCT1110W5-7.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
     )
   )
 
@@ -937,6 +992,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5FC57282)
@@ -969,6 +1029,11 @@
     (pad 1 smd roundrect (at -0.825 0 180) (size 0.8 0.95) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 13 "Net-(A1-Pad10)"))
     (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1009,6 +1074,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5FC43C31)
@@ -1041,6 +1111,11 @@
     (pad 1 smd roundrect (at -0.825 0 180) (size 0.8 0.95) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 16 "Net-(A1-Pad7)"))
     (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1081,6 +1156,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5FC43CC1)
@@ -1113,6 +1193,11 @@
     (pad 1 smd roundrect (at -0.825 0 180) (size 0.8 0.95) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 3 "Net-(A1-Pad6)"))
     (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1153,6 +1238,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5FCBF356)
@@ -1185,6 +1275,11 @@
     (pad 1 smd roundrect (at -0.825 0 180) (size 0.8 0.95) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 4 "Net-(A1-Pad3)"))
     (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1225,6 +1320,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5FC4591F)
@@ -1257,6 +1357,11 @@
     (pad 1 smd roundrect (at -0.825 0) (size 0.8 0.95) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 22 /sensors/OUT1))
     (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1297,6 +1402,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5FC4339D)
@@ -1329,6 +1439,11 @@
     (pad 1 smd roundrect (at -0.775 0 270) (size 0.9 0.95) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 19 /power/5V))
     (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1369,6 +1484,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5FC43B71)
@@ -1405,6 +1525,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5FC43BA1)
@@ -1413,7 +1538,7 @@
     (tags capacitor)
     (path /5FC723A8/5FC78580)
     (attr smd)
-    (fp_text reference C5 (at 0.1 1.35) (layer F.SilkS)
+    (fp_text reference C5 (at 0 1.35) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 1µF (at 0 1.43) (layer F.Fab)
@@ -1437,6 +1562,11 @@
     (pad 1 smd roundrect (at -0.775 0 180) (size 0.9 0.95) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1477,6 +1607,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5FC43CF1)
@@ -1509,6 +1644,11 @@
     (pad 1 smd roundrect (at -0.775 0 270) (size 0.9 0.95) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 16 "Net-(A1-Pad7)"))
     (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1549,6 +1689,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5FC94074)
@@ -1581,6 +1726,11 @@
     (pad 1 smd roundrect (at -0.775 0 270) (size 0.9 0.95) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 4 "Net-(A1-Pad3)"))
     (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1660,9 +1810,59 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/TexasInstruments/ADS131M04.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
-  (gr_text "current-monitor\nV1.0.0\nhochreiner.net" (at 144 114 180) (layer B.SilkS) (tstamp 5FCBB65C)
+  (gr_text GND (at 179 100.7) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
+  (gr_text 5V (at 179 103.2) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
+  (gr_text 3V3 (at 179 105.8) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
+  (gr_text GND (at 179 108.3) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
+  (gr_text SYNC (at 179 110.9) (layer F.SilkS) (tstamp 5FCBD600)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
+  (gr_text DRDY (at 173.5 110.9) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify right))
+  )
+  (gr_text CS (at 173.5 108.3) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify right))
+  )
+  (gr_text SCLK (at 173.5 105.8) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify right))
+  )
+  (gr_text CIPO (at 173.5 103.2) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify right))
+  )
+  (gr_text COPI (at 173.5 100.7) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify right))
+  )
+  (gr_text 2+ (at 145.4 118.3) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text 2- (at 145.4 115.7) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text 1- (at 145.4 108.7) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text 1+ (at 145.4 111.3) (layer F.SilkS) (tstamp 5FCBD194)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text GND (at 136.8 113.5) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text "current-monitor\nV1.0.0\nhochreiner.net" (at 144 114 180) (layer B.SilkS) (tstamp 5FCBD1D5)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
   (gr_arc (start 135 118) (end 133 118) (angle -90) (layer Edge.Cuts) (width 0.05))
@@ -1876,7 +2076,7 @@
   (segment (start 149 106.9) (end 149 109.25) (width 0.25) (layer F.Cu) (net 20))
   (segment (start 148.2 106.1) (end 149 106.9) (width 0.25) (layer F.Cu) (net 20))
   (segment (start 148.95 109.2) (end 149 109.25) (width 0.75) (layer F.Cu) (net 20))
-  (segment (start 146.2 109.2) (end 148.95 109.2) (width 0.75) (layer F.Cu) (net 20))
+  (segment (start 146.2 109.2) (end 148.95 109.2) (width 0.75) (layer F.Cu) (net 20) (tstamp 5FCBD199))
   (segment (start 145.7 108.7) (end 146.2 109.2) (width 0.75) (layer F.Cu) (net 20))
   (segment (start 142.555 108.7) (end 145.7 108.7) (width 0.75) (layer F.Cu) (net 20))
   (segment (start 142.525 108.73) (end 142.555 108.7) (width 0.75) (layer F.Cu) (net 20))
