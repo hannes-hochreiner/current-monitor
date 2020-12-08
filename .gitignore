@@ -2,3 +2,4 @@
 *.sch-bak
 fp-info-cache
 _autosave-*
+*.FCStd1
